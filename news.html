@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            News
+        </title>
+        <link rel ="stylesheet" href="testt.css">
+    </head>
+    <body>
+        <marquee direction="right">
+            News
+        </marquee>
+
+        <ul>
+            <li><a href="Seventh_A.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="hw.html">Homeworks</a></li>
+        </ul>
+        <p align="right"><b>Date:</b>
+            <span id="time">00</span> 
+        </p>
+
+        
+
+        <h2>News</h2>
+
+       <table border=3 cellspacing=10 cellpadding=10>
+        <td> 
+                <p>
+                    There wil be CCT classes weekly(Maths,Science,English)
+                    and monthly(remaining subjects) so maintain a saperaate
+                    note book for it.All subjects(cct) in notebook(cct).
+
+                </p>
+                <p>
+                    -Shaheen mam
+                </p>
+            </td>
+        </table>
+        <script>
+            let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+       
+
+        let yr = newDate.getFullYear();
+        
+
+        let dat = newDate.getDate();
+        
+
+        let month = newDate.getMonth();
+        
+
+        let hours = newDate.getHours();
+        
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        </script>
+
+    </body>
+</html>

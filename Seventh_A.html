@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            7A
+        </title>
+
+        <link rel ="stylesheet" href="testt.css">
+        
+        
+    </head>
+    <body>
+        <marquee direction="right"
+        scrollamount="5">
+            Class 7A Information
+        </marquee>
+
+        <ul>
+            <li><a href="Seventh_A.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="hw.html">Homeworks</a></li>
+        </ul>
+
+        <p align="right"><b>Date:</b>
+            <span id="time">00</span> 
+        </p>
+
+        <h2>Time table</h2>
+        <table border=3 cellspacing=10 cellpadding=10>
+            <tr>
+                <td>
+                <b>periods/Days</b>
+                </td>
+                <td>
+                    <b>1</b>
+                </td>
+                <td>
+                    <b>2</b>
+                </td>
+                <td>
+                    <b>3</b>
+                </td>
+                <td>
+                    <b>4</b>
+                </td>
+                <td>
+                    <b>5</b>
+                </td>
+                <td>
+                    <b>6</b>
+                </td>
+                <td>
+                    <b>7</b>
+                </td>
+                <td>
+                    <b>8</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Monday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                   Maths
+                </td>
+                <td>
+                    Computer
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                    Science
+                </td>
+                <td>
+                    Maths
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Tuesday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                   Computer
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                    Maths
+                </td>
+                <td>
+                    Maths
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Wednesday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                   Games
+                </td>
+                <td>
+                    Library
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                    Maths
+                </td>
+                <td>
+                    Sanskrit
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Thursday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                   Games
+                </td>
+                <td>
+                    Maths
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                    Sanskrit
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Friday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    English
+                </td>
+                <td>
+                   English
+                </td>
+                <td>
+                    Maths
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                   Social Science
+                </td>
+                <td>
+                    Sanskrit
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Saturday</b>
+                </td>
+                <td>
+                    Hindi
+                </td>
+                <td>
+                    Social Science
+                </td>
+                <td>
+                    Music
+                </td>
+                <td>
+                   English
+                </td>
+                <td>
+                    Maths
+                </td>
+                <td>
+                   Science
+                </td>
+                <td>
+                    CCA
+                </td>
+                <td>
+                    CCA
+                </td>
+            </tr>
+        </table>
+        <h2>Class Members</h2>
+        <p></p>
+        <script>
+                let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        
+
+        let yr = newDate.getFullYear();
+        
+
+        let dat = newDate.getDate();
+        
+
+        let month = newDate.getMonth();
+        
+
+        let hours = newDate.getHours();
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        </script>
+
+
+    </body>
+</html>
